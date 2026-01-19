@@ -26,7 +26,9 @@ function registerCors(app: FastifyInstance) {
  */
 function registerJWT(app: FastifyInstance) {
   if (!config.jwtSecret) {
-    throw new Error('JWT secret is not defined');
+    throw new Error(
+      'JWT_SECRET is not defined. Please copy apps/api/.env.example to apps/api/.env and set JWT_SECRET'
+    );
   }
   
   app.register(jwt, {

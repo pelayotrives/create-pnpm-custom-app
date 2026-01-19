@@ -14,7 +14,9 @@ async function start() {
   
   try {
     if (!config.mongoUri) {
-      app.log.error('Missing MONGODB_URI');
+      app.log.error(
+        'MONGODB_URI is not defined. Please copy apps/api/.env.example to apps/api/.env and set MONGODB_URI'
+      );
       process.exit(1);
     }
 
