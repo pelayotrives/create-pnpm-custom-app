@@ -1,0 +1,22 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "short_name": "{{PROJECT_NAME}}",
+  "description": "A professional full-stack monorepo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

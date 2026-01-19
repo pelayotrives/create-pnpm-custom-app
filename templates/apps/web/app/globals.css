@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+
+/* ==================================================
+   TAILWIND THEME CONFIGURATION
+   ================================================== */
+
+@theme {
+  /* ==================================================
+     CUSTOM COLORS
+     ================================================== */
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #10b981;
+  --color-secondary-foreground: #ffffff;
+
+  /* ==================================================
+     LIGHT MODE COLORS
+     ================================================== */
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0a0a0a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #0f172a;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #3b82f6;
+
+  /* ==================================================
+     BORDER RADIUS
+     ================================================== */
+  --radius: 0.5rem;
+
+  /* ==================================================
+     CUSTOM SPACING (if needed)
+     ================================================== */
+  /* --spacing-section: 4rem; */
+}
+
+/* ==================================================
+   DARK MODE CONFIGURATION
+   ================================================== */
+
+:root {
+  color-scheme: light dark;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --color-primary: #60a5fa;
+  --color-secondary: #34d399;
+
+  --color-background: #0a0a0a;
+  --color-foreground: #fafafa;
+  --color-card: #0a0a0a;
+  --color-card-foreground: #fafafa;
+  --color-popover: #0a0a0a;
+  --color-popover-foreground: #fafafa;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-accent: #1e293b;
+  --color-accent-foreground: #fafafa;
+  --color-destructive: #7f1d1d;
+  --color-border: #1e293b;
+  --color-input: #1e293b;
+  --color-ring: #60a5fa;
+}
+
+/* ==================================================
+   BASE STYLES
+   ================================================== */
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ==================================================
+   UTILITY CLASSES (optional custom utilities)
+   ================================================== */
+
+/* Example: Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Example: Focus visible styling */
+:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}

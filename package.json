@@ -1,0 +1,39 @@
+{
+  "name": "create-pnpm-custom-app",
+  "version": "1.0.0",
+  "description": "A professional CLI to scaffold full-stack monorepo projects with Next.js, Fastify, and pnpm workspaces",
+  "type": "module",
+  "bin": {
+    "create-pnpm-custom-app": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Run: npx create-pnpm-custom-app my-project\" && exit 0"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "boilerplate",
+    "monorepo",
+    "pnpm",
+    "nextjs",
+    "fastify",
+    "typescript",
+    "tailwind"
+  ],
+  "author": "Pelayo Trives",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.1",
+    "prompts": "^2.4.2"
+  },
+  "files": [
+    "bin",
+    "templates"
+  ]
+}

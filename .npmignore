@@ -1,0 +1,21 @@
+# Development files
+node_modules/
+.DS_Store
+*.log
+
+# Test projects
+test-project/
+test-final/
+my-app/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+.cache
+
+# IMPORTANT: Include .gitignore files from templates
+!templates/**/.gitignore
+!templates/.gitignore
