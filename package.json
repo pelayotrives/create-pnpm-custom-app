@@ -1,6 +1,6 @@
 {
   "name": "create-pnpm-custom-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A professional CLI to scaffold full-stack monorepo projects with Next.js, Fastify, and pnpm workspaces",
   "type": "module",
   "bin": {
