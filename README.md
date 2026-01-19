@@ -17,16 +17,26 @@
 
 ## Quick Start
 
+### Recommended: Use npx (always latest version)
+
 ```bash
-# Using npx (recommended)
-npx create-pnpm-custom-app my-project
+npx create-pnpm-custom-app@latest my-project
+```
 
-# Or with pnpm
-pnpm create pnpm-custom-app my-project
+### Alternative: Global Installation
 
-# Or install globally
-pnpm add -g create-pnpm-custom-app
+```bash
+# Install globally
+npm install -g create-pnpm-custom-app
+
+# Use anywhere
 create-pnpm-custom-app my-project
+```
+
+### With pnpm
+
+```bash
+pnpm create pnpm-custom-app my-project
 ```
 
 ## Project Structure
