@@ -61,7 +61,6 @@ my-project/
 - i18n with next-intl (Spanish/English)
 - Fully responsive with mobile-first approach
 - Accessibility-first components
-- React Hook Form + Zod validation ready
 
 ### Backend (Fastify)
 

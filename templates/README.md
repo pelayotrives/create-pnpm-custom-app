@@ -41,8 +41,6 @@
 - **Language**: TypeScript 5+
 - **Styling**: Tailwind CSS 4
 - **i18n**: next-intl
-- **State Management**: React hooks + Context API
-- **Form Validation**: React Hook Form + Zod
 
 ### Backend (`apps/api`)
 
