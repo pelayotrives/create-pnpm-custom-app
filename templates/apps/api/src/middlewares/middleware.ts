@@ -69,7 +69,7 @@ export async function authenticate(
 ) {
   try {
     await request.jwtVerify();
-  } catch (err) {
+  } catch {
     reply.status(401).send({ error: 'Unauthorized' });
   }
 }

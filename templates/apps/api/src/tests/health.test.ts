@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from '@jest/globals';
 import { buildApp } from '../app.js';
-import { connectMongo, disconnectMongo } from '../db/mongo.js';
-import { FastifyInstance } from 'fastify';
+// import { connectMongo, disconnectMongo } from '../db/mongo.js';
+import type { FastifyInstance } from 'fastify';
 
 /**
  * Example Test Suite

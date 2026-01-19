@@ -27,6 +27,7 @@ async function main() {
   console.log(chalk.bold.cyan('\n🚀 Create PNPM Custom App\n'));
 
   let projectName = args[0];
+  let githubUser = '';
 
   if (!projectName) {
     const response = await prompts({
@@ -44,6 +45,17 @@ async function main() {
 
     projectName = response.projectName;
   }
+
+  // Ask for GitHub username
+  const githubResponse = await prompts({
+    type: 'text',
+    name: 'githubUser',
+    message: 'What is your GitHub username? (optional, used only for repository links)',
+    initial: projectName,
+    validate: (value) => true, // Optional field
+  });
+
+  githubUser = githubResponse.githubUser || projectName;
 
   const projectPath = path.resolve(process.cwd(), projectName);
 
@@ -103,6 +115,12 @@ async function main() {
       path.join(projectPath, 'apps/web/app/layout.tsx'),
       path.join(projectPath, 'apps/web/app/manifest.json'),
       path.join(projectPath, 'apps/web/app/components/layout/Nav.component.tsx'),
+      path.join(projectPath, 'apps/web/app/components/layout/Footer.component.tsx'),
+      path.join(projectPath, 'apps/web/app/[locale]/(routes)/page.tsx'),
+      path.join(projectPath, 'apps/web/app/opengraph-image.tsx'),
+      path.join(projectPath, 'apps/web/app/twitter-image.tsx'),
+      path.join(projectPath, 'apps/web/app/apple-icon.tsx'),
+      path.join(projectPath, 'apps/web/app/icon.tsx'),
       path.join(projectPath, 'apps/web/messages/en.json'),
       path.join(projectPath, 'apps/web/messages/es.json'),
       path.join(projectPath, 'apps/api/src/app.ts'),
@@ -112,9 +130,10 @@ async function main() {
 
     filesToReplace.forEach((filePath) => {
       if (fs.existsSync(filePath)) {
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const updated = content.replace(/\{\{PROJECT_NAME\}\}/g, projectName);
-        fs.writeFileSync(filePath, updated);
+        let content = fs.readFileSync(filePath, 'utf-8');
+        content = content.replace(/\{\{PROJECT_NAME\}\}/g, projectName);
+        content = content.replace(/\{\{GITHUB_USER\}\}/g, githubUser);
+        fs.writeFileSync(filePath, content);
       }
     });
 

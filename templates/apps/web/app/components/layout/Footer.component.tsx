@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -14,18 +15,12 @@ export function Footer() {
 
           <div className="flex gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/{{GITHUB_USER}}/{{PROJECT_NAME}}"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
               GitHub
-            </a>
-            <a
-              href="/docs"
-              className="text-sm text-muted-foreground hover:text-foreground"
-            >
-              Documentation
             </a>
           </div>
         </div>
