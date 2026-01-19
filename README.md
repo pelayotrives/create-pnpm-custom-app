@@ -4,16 +4,16 @@
 
 ## Features
 
-**Next.js 16** - Latest Next.js with App Router and React 19
-**Fastify 5** - High-performance backend API
-**MongoDB** - Mongoose ODM for database operations
-**JWT Authentication** - Secure authentication out of the box
-**i18n Ready** - Internationalization with next-intl (English/Spanish)
-**Tailwind CSS 4** - Modern utility-first styling
-**Swagger/OpenAPI** - Auto-generated API documentation
-**Testing Ready** - Jest configured for both frontend and backend
-**Monorepo** - pnpm workspaces for efficient dependency management
-**Shared Types** - TypeScript interfaces shared between apps
+- **Next.js 16**: Latest Next.js with App Router and React 19
+- **Fastify 5**: High-performance backend API
+- **MongoDB**: Mongoose ODM for database operations
+- **JWT Authentication**: Secure authentication out of the box
+- **i18n Ready**: Internationalization with next-intl (English/Spanish)
+- **Tailwind CSS 4**: Modern utility-first styling
+- **Swagger/OpenAPI**: Auto-generated API documentation
+- **Testing Ready**: Jest configured for both frontend and backend
+- **Monorepo**: pnpm workspaces for efficient dependency management
+- **Shared Types**: TypeScript interfaces shared between apps
 
 ## Quick Start
 
