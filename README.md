@@ -215,4 +215,4 @@ Created by Pelayo Trives
 
 ---
 
-**Happy coding!** 🎉
+**Happy coding!**

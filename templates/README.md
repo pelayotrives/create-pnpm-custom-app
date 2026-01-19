@@ -7,33 +7,33 @@
 [![Fastify](https://img.shields.io/badge/Fastify-5.x-green.svg)](https://www.fastify.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Development](#-development)
-- [Building for Production](#-building-for-production)
-- [Testing](#-testing)
-- [Documentation](#-documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Development](#development)
+- [Building for Production](#building-for-production)
+- [Testing](#testing)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
-## ✨ Features
+## Features
 
-- 🎨 **Modern UI** - Next.js 16 with App Router and React Server Components
-- 🎯 **Type-Safe** - Full TypeScript coverage across frontend and backend
-- 🌐 **Internationalization** - Built-in i18n support with next-intl (English/Spanish)
-- 🎨 **Tailwind CSS 4** - Utility-first styling with custom design system
-- 🚀 **Fast API** - Fastify backend with MongoDB and Mongoose
-- 🔐 **Authentication** - JWT-based auth with secure cookie handling
-- 📚 **API Documentation** - Interactive Swagger/OpenAPI documentation
-- 🧪 **Testing Ready** - Jest configured for both frontend and backend
-- 📦 **Monorepo** - pnpm workspaces for efficient dependency management
-- 🔄 **Shared Types** - Common interfaces between frontend and backend
+- **Modern UI** - Next.js 16 with App Router and React Server Components
+- **Type-Safe** - Full TypeScript coverage across frontend and backend
+- **Internationalization** - Built-in i18n support with next-intl (English/Spanish)
+- **Tailwind CSS 4** - Utility-first styling with custom design system
+- **Fast API** - Fastify backend with MongoDB and Mongoose
+- **Authentication** - JWT-based auth with secure cookie handling
+- **API Documentation** - Interactive Swagger/OpenAPI documentation
+- **Testing Ready** - Jest configured for both frontend and backend
+- **Monorepo** - pnpm workspaces for efficient dependency management
+- **Shared Types** - Common interfaces between frontend and backend
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend (`apps/web`)
 
@@ -60,7 +60,7 @@
 - TypeScript interfaces and types
 - Shared utilities and constants
 
-## 📁 Project Structure
+## Project Structure
 
 ```txt
 {{PROJECT_NAME}}/
@@ -129,7 +129,7 @@
 └── README.md                   # This file
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -193,7 +193,7 @@ Ensure you have the following installed:
    pnpm --filter api dev
    ```
 
-## 💻 Development
+## Development
 
 ### Available Scripts
 
@@ -239,7 +239,7 @@ Configuration files:
 - `.prettierrc` - Prettier formatting rules
 - `tsconfig.json` - TypeScript configuration
 
-## 🏗 Building for Production
+## Building for Production
 
 ### Frontend
 
@@ -262,7 +262,7 @@ pnpm --filter api build
 NODE_ENV=production pnpm --filter api start
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Run All Tests
 
@@ -292,13 +292,13 @@ describe('Feature Name', () => {
 });
 ```
 
-## 📚 Documentation
+## Documentation
 
 - **API Documentation**: Available at `http://localhost:3002/docs` when running the backend
 - **Copilot Instructions**: See `.github/copilot-instructions.md` for AI-assisted development guidelines
 - **Contributing Guide**: See `CONTRIBUTING.md` for contribution guidelines
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 
@@ -310,11 +310,11 @@ We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for de
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Next.js](https://nextjs.org/)
 - Powered by [Fastify](https://www.fastify.io/)
@@ -323,4 +323,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made by [Your Name]**
