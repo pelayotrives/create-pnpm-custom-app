@@ -26,6 +26,9 @@ jobs:
         with:
           version: 8
       
+      - name: Install CLI dependencies
+        run: pnpm install
+      
       - name: Test CLI execution
         run: |
           echo "Testing CLI locally..."
