@@ -19,6 +19,8 @@
 
 ### Recommended: Use npx (always latest version)
 
+[![npm version](https://img.shields.io/npm/v/create-pnpm-custom-app.svg)](https://www.npmjs.com/package/create-pnpm-custom-app)
+
 ```bash
 npx create-pnpm-custom-app@latest my-project
 ```

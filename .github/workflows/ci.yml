@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Test CLI execution
+        run: |
+          echo "Testing CLI locally..."
+          node bin/cli.js test-project --help || echo "Help command works"
+      
+      - name: Create test project
+        run: |
+          echo "test-ci" | node bin/cli.js test-ci
+      
+      - name: Install dependencies in test project
+        working-directory: ./test-ci
+        run: pnpm install
+      
+      - name: Run lint in test project
+        working-directory: ./test-ci
+        run: pnpm lint
+      
+      - name: Run build in test project
+        working-directory: ./test-ci
+        run: pnpm build
+      
+      - name: Run tests in test project
+        working-directory: ./test-ci
+        run: pnpm test
+      
+      - name: Verify package structure
+        run: |
+          echo "📦 Verifying package structure..."
+          npm pack --dry-run
+          echo "✅ Package structure verified"

@@ -32,6 +32,14 @@
     "ora": "^8.1.1",
     "prompts": "^2.4.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelayotrives/create-pnpm-custom-app"
+  },
+  "homepage": "https://github.com/pelayotrives/create-pnpm-custom-app#readme",
+  "bugs": {
+    "url": "https://github.com/pelayotrives/create-pnpm-custom-app/issues"
+  },
   "files": [
     "bin",
     "templates"
