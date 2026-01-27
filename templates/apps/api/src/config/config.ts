@@ -15,12 +15,12 @@ const env = process.env.NODE_ENV ?? 'development';
 
 /**
  * Application configuration loaded from environment variables
- * 
+ *
  * @remarks
  * Required environment variables:
  * - MONGODB_URI: MongoDB connection string
  * - JWT_SECRET: Secret for JWT token signing
- * 
+ *
  * Optional environment variables:
  * - PORT: Server port (default: 3002)
  * - CORS_ORIGIN: Allowed CORS origin (default: *)

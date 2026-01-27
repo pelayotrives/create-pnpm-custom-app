@@ -1,10 +1,10 @@
 /**
  * @packageDocumentation
  * Shared types, interfaces, and utilities for {{PROJECT_NAME}}
- * 
+ *
  * This package provides common TypeScript definitions used across
  * both frontend (web) and backend (api) applications.
- * 
+ *
  * Add your shared types, interfaces, and enums here.
  */
 
@@ -36,4 +36,3 @@ export enum HttpStatus {
 //   email: string;
 //   name: string;
 // }
-

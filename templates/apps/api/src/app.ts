@@ -30,7 +30,7 @@ function registerJWT(app: FastifyInstance) {
       'JWT_SECRET is not defined. Please copy apps/api/.env.example to apps/api/.env and set JWT_SECRET'
     );
   }
-  
+
   app.register(jwt, {
     secret: config.jwtSecret,
     sign: {
@@ -46,7 +46,7 @@ function registerRateLimit(app: FastifyInstance) {
   if (config.env === 'test') {
     return;
   }
-  
+
   app.register(rateLimit, {
     global: false,
   });
@@ -70,9 +70,7 @@ async function registerSwagger(app: FastifyInstance) {
           description: 'Development server',
         },
       ],
-      tags: [
-        { name: 'Health', description: 'Health check endpoints' },
-      ],
+      tags: [{ name: 'Health', description: 'Health check endpoints' }],
     },
   });
 
@@ -99,7 +97,7 @@ function registerMultipart(app: FastifyInstance) {
 
 /**
  * Builds and configures the Fastify application
- * 
+ *
  * @returns Configured Fastify instance
  */
 export async function buildApp(): Promise<FastifyInstance> {

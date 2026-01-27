@@ -2,10 +2,10 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 /**
  * Example Mongoose Model
- * 
+ *
  * Models define the structure of documents in MongoDB collections.
  * They provide an interface for database operations.
- * 
+ *
  * @remarks
  * Model best practices:
  * - Define TypeScript interfaces for type safety
@@ -13,12 +13,12 @@ import mongoose, { Schema, Document } from 'mongoose';
  * - Add indexes for frequently queried fields
  * - Include timestamps for audit trail
  * - Add schema validation
- * 
+ *
  * @example
  * ```typescript
  * // User Model Example
  * import mongoose, { Schema, Document } from 'mongoose';
- * 
+ *
  * export interface IUser extends Document {
  *   email: string;
  *   password: string;
@@ -27,7 +27,7 @@ import mongoose, { Schema, Document } from 'mongoose';
  *   createdAt: Date;
  *   updatedAt: Date;
  * }
- * 
+ *
  * const UserSchema = new Schema<IUser>(
  *   {
  *     email: {
@@ -56,10 +56,10 @@ import mongoose, { Schema, Document } from 'mongoose';
  *     timestamps: true, // Adds createdAt and updatedAt
  *   }
  * );
- * 
+ *
  * // Add indexes
  * UserSchema.index({ email: 1 });
- * 
+ *
  * export const User = mongoose.model<IUser>('User', UserSchema);
  * ```
  */

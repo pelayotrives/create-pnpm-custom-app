@@ -58,7 +58,7 @@ create-pnpm-custom-app
    # Frontend
    cp apps/web/.env.example apps/web/.env.local
    # Edit apps/web/.env.local
-   
+
    # Backend
    cp apps/api/.env.example apps/api/.env
    # Edit apps/api/.env
@@ -69,7 +69,7 @@ create-pnpm-custom-app
    ```bash
    # Frontend
    pnpm --filter web dev
-   
+
    # Backend (in separate terminal)
    pnpm --filter api dev
    ```

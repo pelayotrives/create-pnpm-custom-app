@@ -1,8 +1,8 @@
 /**
  * Test Helpers
- * 
+ *
  * Utility functions to help with testing.
- * 
+ *
  * @example
  * ```typescript
  * // Create test data
@@ -15,12 +15,12 @@
  *     ...overrides,
  *   };
  * }
- * 
+ *
  * // Generate JWT token for testing
  * export function generateTestToken(userId: string, app: FastifyInstance) {
  *   return app.jwt.sign({ id: userId });
  * }
- * 
+ *
  * // Clean up test database
  * export async function clearDatabase() {
  *   const collections = mongoose.connection.collections;

@@ -281,10 +281,10 @@ pnpm --filter api test:coverage # With coverage
 Example test structure:
 
 ```typescript
-import { describe, it, expect } from '@jest/globals';
+import { describe, it, expect } from "@jest/globals";
 
-describe('Feature Name', () => {
-  it('should do something', () => {
+describe("Feature Name", () => {
+  it("should do something", () => {
     expect(true).toBe(true);
   });
 });

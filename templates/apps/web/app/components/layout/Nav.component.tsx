@@ -5,26 +5,16 @@ export function Nav() {
   const t = useTranslations('nav');
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
+    <nav className="sticky top-0 z-50 border-b border-gray-800 bg-black backdrop-blur">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="text-xl font-bold">
-          {{PROJECT_NAME}}
+        <Link href="/" className="text-xl font-bold text-white">
+          {'{{PROJECT_NAME}}'}
         </Link>
 
         <ul className="flex items-center gap-6">
           <li>
-            <Link href="/" className="text-sm font-medium hover:text-primary">
+            <Link href="/" className="text-sm font-medium text-gray-300 hover:text-white">
               {t('home')}
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="text-sm font-medium hover:text-primary">
-              {t('about')}
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary">
-              {t('contact')}
             </Link>
           </li>
         </ul>

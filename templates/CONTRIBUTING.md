@@ -77,7 +77,7 @@ pnpm --filter api test:watch
 
 We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
-```
+```txt
 <type>(<scope>): <subject>
 
 <body>
@@ -108,11 +108,13 @@ docs(readme): update installation instructions
 1. **Update documentation** - Update README.md if needed
 2. **Add tests** - Ensure new features have test coverage
 3. **Run quality checks**:
+
    ```bash
    pnpm run lint
    pnpm run build
    pnpm run test
    ```
+
 4. **Create pull request** - Use a clear title and description
 5. **Link issues** - Reference related issues in the PR description
 6. **Wait for review** - Address feedback from maintainers
@@ -121,18 +123,22 @@ docs(readme): update installation instructions
 
 ```markdown
 ## Description
+
 Brief description of changes
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Breaking change
 - [ ] Documentation update
 
 ## Testing
+
 Describe the tests you ran
 
 ## Checklist
+
 - [ ] Code follows project style guidelines
 - [ ] Self-review completed
 - [ ] Comments added for complex code
@@ -177,6 +183,7 @@ Describe the tests you ran
 ## Questions?
 
 If you have questions, please:
+
 1. Check existing documentation
 2. Search existing issues
 3. Create a new issue with the `question` label

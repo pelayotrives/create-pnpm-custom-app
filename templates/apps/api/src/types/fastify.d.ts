@@ -2,10 +2,10 @@ import '@fastify/jwt';
 
 /**
  * Extend Fastify types with custom properties
- * 
+ *
  * This file augments Fastify's type definitions to include custom properties
  * like user authentication data from JWT.
- * 
+ *
  * @example
  * ```typescript
  * declare module '@fastify/jwt' {
@@ -18,7 +18,7 @@ import '@fastify/jwt';
  *   }
  * }
  * ```
- * 
+ *
  * This allows TypeScript to recognize `request.user` in route handlers:
  * ```typescript
  * app.get('/profile', {

@@ -106,7 +106,7 @@ my-project/
    ```bash
    # Frontend
    cp apps/web/.env.example apps/web/.env.local
-   
+
    # Backend
    cp apps/api/.env.example apps/api/.env
    ```
@@ -120,7 +120,7 @@ my-project/
    ```bash
    # Terminal 1: Frontend (http://localhost:3000)
    pnpm --filter web dev
-   
+
    # Terminal 2: Backend (http://localhost:3002)
    pnpm --filter api dev
    ```
@@ -162,14 +162,14 @@ pnpm --filter api lint          # Lint code
 
 ## Tech Stack
 
-| Category | Technologies |
-| ---------- | ------------- |
+| Category     | Technologies                                                |
+| ------------ | ----------------------------------------------------------- |
 | **Frontend** | Next.js 16, React 19, TypeScript, Tailwind CSS 4, next-intl |
-| **Backend** | Fastify 5, TypeScript, MongoDB, Mongoose, Pino |
-| **Auth** | @fastify/jwt, bcrypt |
-| **Testing** | Jest, Supertest |
-| **Tooling** | pnpm, ESLint, Prettier, TypeScript |
-| **Docs** | Swagger/OpenAPI, JSDoc |
+| **Backend**  | Fastify 5, TypeScript, MongoDB, Mongoose, Pino              |
+| **Auth**     | @fastify/jwt, bcrypt                                        |
+| **Testing**  | Jest, Supertest                                             |
+| **Tooling**  | pnpm, ESLint, Prettier, TypeScript                          |
+| **Docs**     | Swagger/OpenAPI, JSDoc                                      |
 
 ## Requirements
 

@@ -5,9 +5,9 @@ import type { FastifyInstance } from 'fastify';
 
 /**
  * Example Test Suite
- * 
+ *
  * This file demonstrates how to write tests for your API endpoints.
- * 
+ *
  * @remarks
  * Testing best practices:
  * - Use descriptive test names
@@ -15,22 +15,22 @@ import type { FastifyInstance } from 'fastify';
  * - Mock external dependencies
  * - Clean up test data after each test
  * - Use beforeAll/afterAll for setup/teardown
- * 
+ *
  * @example
  * ```typescript
  * describe('User API', () => {
  *   let app: FastifyInstance;
- * 
+ *
  *   beforeAll(async () => {
  *     await connectMongo(process.env.MONGODB_URI_TEST!);
  *     app = await buildApp();
  *   });
- * 
+ *
  *   afterAll(async () => {
  *     await app.close();
  *     await disconnectMongo();
  *   });
- * 
+ *
  *   it('should create a new user', async () => {
  *     const response = await app.inject({
  *       method: 'POST',
@@ -41,14 +41,14 @@ import type { FastifyInstance } from 'fastify';
  *         name: 'Test User',
  *       },
  *     });
- * 
+ *
  *     expect(response.statusCode).toBe(201);
  *     expect(response.json()).toMatchObject({
  *       email: 'test@example.com',
  *       name: 'Test User',
  *     });
  *   });
- * 
+ *
  *   it('should return 400 for invalid email', async () => {
  *     const response = await app.inject({
  *       method: 'POST',
@@ -58,7 +58,7 @@ import type { FastifyInstance } from 'fastify';
  *         password: 'password123',
  *       },
  *     });
- * 
+ *
  *     expect(response.statusCode).toBe(400);
  *   });
  * });

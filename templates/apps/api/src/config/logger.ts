@@ -3,9 +3,9 @@ import pino from 'pino';
 
 /**
  * Returns logger configuration based on environment
- * 
+ *
  * @returns Logger config or false to disable logging in test
- * 
+ *
  * @remarks
  * - Test/E2E: Logging disabled
  * - Production: Structured JSON logs at 'info' level
@@ -46,7 +46,7 @@ export function getLoggerConfig(): false | object {
 
 /**
  * Application-wide logger instance using Pino
- * 
+ *
  * @example
  * ```typescript
  * logger.info({ userId: '123' }, 'User logged in');

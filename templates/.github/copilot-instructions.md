@@ -5,6 +5,7 @@
 [Brief description of your project]
 
 **Tech Stack:**
+
 - **Frontend**: Next.js 16+ (App Router), React 19+, TypeScript
 - **Backend**: Fastify API with MongoDB
 - **Monorepo**: pnpm workspace (apps/web, apps/api, packages/shared)

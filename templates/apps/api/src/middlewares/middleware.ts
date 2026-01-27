@@ -2,10 +2,10 @@ import { FastifyRequest, FastifyReply } from 'fastify';
 
 /**
  * Example Middleware
- * 
+ *
  * Middlewares (preHandlers in Fastify) run before route handlers.
  * They can modify requests, perform authentication, logging, etc.
- * 
+ *
  * @remarks
  * Common middleware uses:
  * - Authentication/Authorization
@@ -13,7 +13,7 @@ import { FastifyRequest, FastifyReply } from 'fastify';
  * - Logging
  * - Rate limiting
  * - Request transformation
- * 
+ *
  * @example
  * ```typescript
  * // Authentication Middleware
@@ -27,7 +27,7 @@ import { FastifyRequest, FastifyReply } from 'fastify';
  *     reply.status(401).send({ error: 'Unauthorized' });
  *   }
  * }
- * 
+ *
  * // Admin Check Middleware
  * export async function requireAdmin(
  *   request: FastifyRequest,
@@ -38,7 +38,7 @@ import { FastifyRequest, FastifyReply } from 'fastify';
  *   }
  * }
  * ```
- * 
+ *
  * Usage in routes:
  * ```typescript
  * app.get('/admin/users', {
@@ -48,25 +48,19 @@ import { FastifyRequest, FastifyReply } from 'fastify';
  *   },
  * });
  * ```
- * 
+ *
  * Or register globally:
  * ```typescript
  * app.addHook('preHandler', authenticate);
  * ```
  */
 
-export async function exampleMiddleware(
-  request: FastifyRequest,
-  _reply: FastifyReply
-) {
+export async function exampleMiddleware(request: FastifyRequest, _reply: FastifyReply) {
   // Example: Log all requests
   request.log.info(`${request.method} ${request.url}`);
 }
 
-export async function authenticate(
-  request: FastifyRequest,
-  reply: FastifyReply
-) {
+export async function authenticate(request: FastifyRequest, reply: FastifyReply) {
   try {
     await request.jwtVerify();
   } catch {

@@ -1,13 +1,13 @@
 /**
  * Swagger Schema Definitions
- * 
+ *
  * This file contains reusable schema definitions for Swagger/OpenAPI documentation.
- * 
+ *
  * @remarks
  * - Define request/response schemas here
  * - Use these schemas in your route definitions
  * - Keep schemas organized by feature/entity
- * 
+ *
  * @example
  * ```typescript
  * export const UserSchema = {
@@ -19,7 +19,7 @@
  *   },
  *   required: ['id', 'email', 'name'],
  * };
- * 
+ *
  * export const CreateUserSchema = {
  *   type: 'object',
  *   properties: {
@@ -30,7 +30,7 @@
  *   required: ['email', 'password', 'name'],
  * };
  * ```
- * 
+ *
  * Usage in routes:
  * ```typescript
  * app.post('/users', {

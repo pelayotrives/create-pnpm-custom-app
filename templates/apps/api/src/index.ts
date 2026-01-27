@@ -4,14 +4,14 @@ import config from './config/config.js';
 
 /**
  * Starts the API server
- * 
+ *
  * - Connects to MongoDB
  * - Starts the Fastify server on configured port
  * - Logs server URL when ready
  */
 async function start() {
   const app = await buildApp();
-  
+
   try {
     if (!config.mongoUri) {
       app.log.error(

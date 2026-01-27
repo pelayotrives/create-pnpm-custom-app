@@ -1,8 +1,8 @@
 /**
  * Test Mocks
- * 
+ *
  * Mock data and functions for testing.
- * 
+ *
  * @example
  * ```typescript
  * // Mock user data
@@ -14,7 +14,7 @@
  *   createdAt: new Date('2024-01-01'),
  *   updatedAt: new Date('2024-01-01'),
  * };
- * 
+ *
  * // Mock service response
  * export const mockUserService = {
  *   findUserById: jest.fn().mockResolvedValue(mockUser),

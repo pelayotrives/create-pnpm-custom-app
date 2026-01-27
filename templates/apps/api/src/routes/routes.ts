@@ -2,13 +2,13 @@ import { FastifyInstance } from 'fastify';
 
 /**
  * Registers all API routes
- * 
+ *
  * @param app - Fastify instance
- * 
+ *
  * @remarks
  * This function registers all route modules.
  * Add your route registrations here as you create new endpoints.
- * 
+ *
  * @example
  * ```typescript
  * // Register a new route module
